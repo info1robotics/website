@@ -33,11 +33,11 @@
 // overrides
 //
 
-$green: #00942B;
+$green-c: #00942B;
 
 
 $theme-colors: (
-  "primary": $green
+  "primary": $green-c
 );
 
 
@@ -66,13 +66,29 @@ $body-color: #FFFFFF;
 // scss
 //
 
-img.responsive-img {
+img.responsive-img-h {
   display: block;
   width: 100%;
   height: auto;
 }
 
+
+
 .card {
   background-color: #2c2c2c;
   color: white;
+}
+
+.bg-dark {
+  background-color: $green-c !important;
+}
+
+#sponsorsCarousel>.carousel-inner>.carousel-item>img {
+  height: 512px;
+  width: 512px;
+}
+
+
+#sponsorsCarousel>.carousel-inner>.carousel-item>.carousel-caption{
+  background: rgba(0, 0, 0, 0.171);
 }
