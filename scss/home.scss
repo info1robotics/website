@@ -1,0 +1,78 @@
+//
+// imports
+//
+@import "../node_modules/rfs/scss.scss";
+
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url("../resources/fonts/ShareTechMono-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("../resources/fonts/SFMono-Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("../resources/fonts/SFMono-Light.otf") format('opentype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("../resources/fonts/SFMono-Semibold.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//
+// overrides
+//
+
+$green: #00942B;
+
+
+$theme-colors: (
+  "primary": $green
+);
+
+
+
+$body-bg: #121212;
+$body-color: #FFFFFF;
+
+//
+// mixin functions
+//
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+//
+// import bootstrap
+//
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//
+// scss
+//
+
+img.responsive-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: #2c2c2c;
+  color: white;
+}
