@@ -45,6 +45,8 @@ $theme-colors: (
 $body-bg: #121212;
 $body-color: #FFFFFF;
 
+$enable-rounded: false;
+
 //
 // mixin functions
 //
@@ -66,29 +68,133 @@ $body-color: #FFFFFF;
 // scss
 //
 
-img.responsive-img-h {
-  display: block;
-  width: 100%;
-  height: auto;
+body {
+  @include font-size(1.05rem);
+  font-family: "SF Mono", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(218, 218, 218);
+}
+
+@for $index from 1 through 6 {
+  h#{$index} {
+    font-family: "Share Tech Mono", 'Courier New', Courier, monospace;
+  }
+  .display-#{$index} {
+    font-family: "Share Tech Mono", 'Courier New', Courier, monospace;
+  }
+}
+
+@for $index from 1 through 3 {
+  h#{$index} {
+    text-shadow: 10px 10px 0 #202020;
+  }
+
+  .display-#{$index} {
+    text-shadow: 10px 10px 0 #202020;
+  }
+}
+
+
+.landing-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  height: 100vh;
+  margin-bottom: 0;
+
+  .cont {
+    .main-title {
+      width: auto;
+      padding: 1rem;
+      text-align: center;
+      @include font-size(5.8rem);
+      font-family: "Share Tech Mono", monospace;
+      background-color: whitesmoke;
+      color: #1b1b1b;
+      box-shadow: 15px 15px 0 #313131;
+    }
+
+    .slogan {
+      width: auto;
+      margin-top: 1rem;
+      text-align: center;
+      @include font-size(2.3rem);
+      font-weight: bold;
+      letter-spacing: -3px;
+      font-family: "SF Mono", Arial, Helvetica, sans-serif;
+      color: $green * 1.4;
+    }
+  }
+
 }
 
 
 
+img.responsive-img-h {
+  display: block;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 801px) {
+    width: 70%;
+  }
+  height: auto;
+}
+
+#big-img {
+  box-shadow: 15px 15px 0 #202020;
+}
+
+
 .card {
-  background-color: #2c2c2c;
+  background-color: #888888;
   color: white;
+  box-shadow: 15px 15px 0 #202020;
+}
+
+.member-card-col {
+  max-width: 400px;
 }
 
 .bg-dark {
   background-color: $green-c !important;
 }
 
-#sponsorsCarousel>.carousel-inner>.carousel-item>img {
-  height: 512px;
-  width: 512px;
+@media screen and (max-width: 511px) {
+  #sponsorsCarousel>.carousel-inner>.carousel-item>img {
+    height: 337px;
+    width: 337px;
+  }
+
+}
+
+@media screen and (min-width: 512px) {
+  #sponsorsCarousel>.carousel-inner>.carousel-item>img {
+    height: 512px;
+    width: 512px;
+  }
 }
 
 
 #sponsorsCarousel>.carousel-inner>.carousel-item>.carousel-caption{
   background: rgba(0, 0, 0, 0.171);
+}
+
+.card-title {
+  @include font-size(1.6rem);
+}
+
+.card-text {
+  @include font-size(0.9rem);
+}
+
+
+
+.team-area {
+  background-color: #2b2b2b;
+}
+
+.sponsors-area {
+  background-color: #121212;
 }
