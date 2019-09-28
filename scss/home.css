@@ -10597,6 +10597,14 @@ img.responsive-img-h {
 }
 
 .sponsors-area {
-  background-color: #121212;
+  background-color: #2b2b2b;
+}
+
+.events-area .accordion {
+  min-width: 100% !important;
+}
+
+.events-area .accordion .btn-link {
+  color: greenyellow !important;
 }
 /*# sourceMappingURL=home.css.map */
