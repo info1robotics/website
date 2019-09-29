@@ -40,7 +40,7 @@ $theme-colors: ("primary": $green-c);
 
 
 
-$body-bg: #121212;
+$body-bg: #2b2b2b;
 $body-color: #FFFFFF;
 
 $enable-rounded: false;
@@ -207,10 +207,35 @@ img.responsive-img-h {
 .events-area {
 
   .accordion {
-    min-width: 100% !important;
-    .btn-link {
-      color: greenyellow !important;
+
+
+    .card {
+      
+      .btn-link {
+        @include font-size(2rem);
+        color: greenyellow !important;
+      }
+
+
+      .collapse {
+        background-color: #777777;
+      }
     }
+    
   }
   
+}
+
+img.responsive-img-w {
+  display: block;
+
+  @media screen and (max-width: 800px) {
+    width: 120%;
+  }
+
+  @media screen and (min-width: 801px) {
+    width: 80%;
+  }
+
+  height: auto;
 }
