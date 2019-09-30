@@ -135,10 +135,12 @@ img.responsive-img-h {
   display: block;
 
   @media screen and (max-width: 800px) {
+    max-width: 100%;
     width: 100%;
   }
 
   @media screen and (min-width: 801px) {
+    max-width: 100%;
     width: 70%;
   }
 
@@ -230,10 +232,12 @@ img.responsive-img-w {
   display: block;
 
   @media screen and (max-width: 800px) {
+    max-width: 120%;
     width: 120%;
   }
 
   @media screen and (min-width: 801px) {
+    max-width: 80%;
     width: 80%;
   }
 
