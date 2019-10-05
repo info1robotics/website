@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 navigation">
         <div class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">infO(1) Robotics</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -31,7 +31,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="#events-area">Events</a>
                     </li>
 
                 </ul>
@@ -41,9 +41,15 @@
     </div>
 
     <div class="landing-area container-fluid">
+
+        <video autoplay muted loop id="vid-background">
+            <source src="../resources/vid.mp4" type="video/mp4">
+        </video>
+
+        <div id="vid-background-dark"></div>
         <div class="cont">
-            <div class="main-title">WE MAKE (P)ROBOTS!</div>
-            <p class="slogan">and all other kinds of things</p>
+            <div id="landing-title" class="main-title"></div>
+            <p class="slogan">something something</p>
         </div>
     </div>
     <div class="team-area container-fluid pl-lg-5 pr-lg-5">
@@ -58,23 +64,23 @@
         <div class="row mt-4">
             <div class="col-md-6">
                 <p>We are the infO(1)Robotics Team – RO 140 / 15993 - from “Ion Luca Caragiale” High -
-                School, Ploiesti, Romania. Our team started its actions on April 2018, and it is
-                coordinated by our main mentor Daniela Lica, a computer – programming teacher.
-                Our team is composed of 15 members and 3 volunteers and each of them is currently
-                working in the STEM fields with extracurricular activities which fit their sub-teams.
-                Our team started with no budget and has been gradually building up its financial
-                resources.
+                    School, Ploiesti, Romania. Our team started its actions on April 2018, and it is
+                    coordinated by our main mentor Daniela Lica, a computer – programming teacher.
+                    Our team is composed of 15 members and 3 volunteers and each of them is currently
+                    working in the STEM fields with extracurricular activities which fit their sub-teams.
+                    Our team started with no budget and has been gradually building up its financial
+                    resources.
                 </p>
             </div>
 
             <div class="col-md-6">
                 <p>infO(1)Robotics is currently participating at FIRST Tech Challenge and expects to
-                develop a greater knowledge for the future’s main goal: Robots and Artificial
-                Intelligence.
-                We combine work and pleasure, we always train hard but in an enjoyable way. By
-                sharing opinions and learning about team work, we believe we can get creative
-                enough to someday find a revolutionary and feasible idea of a robot that could
-                unbelievably save humanity in its own way.</p>
+                    develop a greater knowledge for the future’s main goal: Robots and Artificial
+                    Intelligence.
+                    We combine work and pleasure, we always train hard but in an enjoyable way. By
+                    sharing opinions and learning about team work, we believe we can get creative
+                    enough to someday find a revolutionary and feasible idea of a robot that could
+                    unbelievably save humanity in its own way.</p>
             </div>
         </div>
 
@@ -100,7 +106,8 @@
         <div class="row mt-4 justify-content-center m-3">
             <div class="member-card-col col-lg-4 col-md-6 col-offset-2 mt-2">
                 <div class="card">
-                    <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/59712964_1975230382606323_3943541419595005952_o.jpg?_nc_cat=111&_nc_oc=AQnRIxP1WP9OtOLevokU8u689I7yQaJ5HFAHUQMhIhqbLJjRQHDjNnLdjliM7GB3y1w&_nc_ht=scontent-otp1-1.xx&oh=7a281dac3cc4839a87a7efe6cc4d5678&oe=5E2702F1" class="card-img-top" alt="...">
+                    <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/59712964_1975230382606323_3943541419595005952_o.jpg?_nc_cat=111&_nc_oc=AQnRIxP1WP9OtOLevokU8u689I7yQaJ5HFAHUQMhIhqbLJjRQHDjNnLdjliM7GB3y1w&_nc_ht=scontent-otp1-1.xx&oh=7a281dac3cc4839a87a7efe6cc4d5678&oe=5E2702F1"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Agatha</h5>
                         <p class="card-text text-center">test</p>
@@ -109,7 +116,8 @@
             </div>
             <div class="member-card-col col-lg-4 col-md-6 col-offset-2 mt-2">
                 <div class="card">
-                    <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/36514116_1042941642524053_2349788599190290432_n.jpg?_nc_cat=101&_nc_oc=AQnsDKvx1791vsXfOjjJmpdpExOQ9XDWQzkVF3fTaoQErx7LDXJ_JzhQK-as9B28z4I&_nc_ht=scontent-otp1-1.xx&oh=27c2c30684d79221da1dcdd079278b61&oe=5DF53777" class="card-img-top" alt="...">
+                    <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/36514116_1042941642524053_2349788599190290432_n.jpg?_nc_cat=101&_nc_oc=AQnsDKvx1791vsXfOjjJmpdpExOQ9XDWQzkVF3fTaoQErx7LDXJ_JzhQK-as9B28z4I&_nc_ht=scontent-otp1-1.xx&oh=27c2c30684d79221da1dcdd079278b61&oe=5DF53777"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Delia</h5>
                         <p class="card-text text-center">test</p>
@@ -118,7 +126,8 @@
             </div>
             <div class="member-card-col col-lg-4 col-md-6 col-offset-2 mt-2">
                 <div class="card">
-                    <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/56226125_657089271411975_9150951664109223936_n.jpg?_nc_cat=100&_nc_oc=AQnDQh1aV5iGTqkOXcv4L8OAqLcZL4op0atAJlEv55otXSasrgz5r30eqac-4A2nyV8&_nc_ht=scontent-otp1-1.xx&oh=49d96644ca6209d7545381490950933c&oe=5E2E9EB5" class="card-img-top" alt="...">
+                    <img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/56226125_657089271411975_9150951664109223936_n.jpg?_nc_cat=100&_nc_oc=AQnDQh1aV5iGTqkOXcv4L8OAqLcZL4op0atAJlEv55otXSasrgz5r30eqac-4A2nyV8&_nc_ht=scontent-otp1-1.xx&oh=49d96644ca6209d7545381490950933c&oe=5E2E9EB5"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Alex</h5>
                         <p class="card-text text-center">test</p>
@@ -136,68 +145,69 @@
             </div>
         </div>
 
-        </div>
+    </div>
 
-        <div class="sponsors-area container-fluid">
-            <div class="row">
-                <div id="sponsors-section" class="col display-1 text-center">
-                    Our Sponsors
-                </div>
+    <div class="sponsors-area container-fluid">
+        <div class="row">
+            <div id="sponsors-section" class="col display-1 text-center">
+                Our Sponsors
             </div>
-            <div class="row align-content-center mt-4">
-                <div id="sponsorsCarousel" class="col carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <img src="https://via.placeholder.com/1920x1920" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4>Beautiful sponsor</h4>
-                                <p>Thx for all chips</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="https://via.placeholder.com/1920x1920" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4>Beautiful sponsor</h4>
-                                <p>Thx for all chips</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <img src="https://via.placeholder.com/1920x1920" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h4>Beautiful sponsor</h4>
-                                <p>Thx for all chips</p>
-                            </div>
+        </div>
+        <div class="row align-content-center mt-4">
+            <div id="sponsorsCarousel" class="col carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <img src="https://via.placeholder.com/1920x1920" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Beautiful sponsor</h4>
+                            <p>Thx for all chips</p>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#sponsorsCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#sponsorsCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item text-center">
+                        <img src="https://via.placeholder.com/1920x1920" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Beautiful sponsor</h4>
+                            <p>Thx for all chips</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="https://via.placeholder.com/1920x1920" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Beautiful sponsor</h4>
+                            <p>Thx for all chips</p>
+                        </div>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#sponsorsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#sponsorsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-        
-        <div class="events-area container-fluid mt-3 p-0">
-        
+    </div>
+
+    <div id="events-area" class="events-area container-fluid p-0">
+
+        <div class="past-events">
             <div class="row">
                 <div id="team-section" class="col display-1 text-center">
                     Past Events
                 </div>
             </div>
-        
+
             <div class="row m-0">
-        
+
                 <div class="accordion m-0 mt-4" id="accordionExample">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <div class="row justify-content-center">
-                                <img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080"
-                                    alt="">
-        
+                                <!--<img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080"
+                                    alt="">-->
+
                             </div>
                             <div class="row justify-content-center">
                                 <h2 class="mb-0">
@@ -207,10 +217,10 @@
                                     </button>
                                 </h2>
                             </div>
-        
-        
+
+
                         </div>
-        
+
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -231,14 +241,24 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Event #2 blabla
-                                </button>
-                            </h2>
+                            <div class="row justify-content-center">
+                                <!--<img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080" alt="">-->
+
+                            </div>
+                            <div class="row justify-content-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-center" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Evenimentul Never Ever Risking Failing (N. E. R. F.)
+                                    </button>
+                                </h2>
+                            </div>
+
+
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -257,14 +277,24 @@
                     </div>
                     <div class="card">
                         <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Collapsible Group Item #3
-                                </button>
-                            </h2>
+                            <div class="row justify-content-center">
+                                <!--<img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080" alt="">-->
+
+                            </div>
+                            <div class="row justify-content-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-center" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Evenimentul Never Ever Risking Failing (N. E. R. F.)
+                                    </button>
+                                </h2>
+                            </div>
+
+
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                                 squid. 3 wolf
@@ -282,21 +312,206 @@
                         </div>
                     </div>
                 </div>
-        
+
+
             </div>
-        
         </div>
 
+        <div class="upcoming-events pb-4">
+            <div class="row">
+                <div id="team-section" class="col display-1 text-center">
+                    Upcoming Events
+                </div>
+            </div>
+            
+            <div class="row m-0">
+            
+                <div class="accordion m-0 mt-4" id="accordionExample1">
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <div class="row justify-content-center">
+                                <!--<img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080"
+                                                        alt="">-->
+            
+                            </div>
+                            <div class="row justify-content-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-center" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Evenimentul Never Ever Risking Failing (N. E. R. F.)
+                                    </button>
+                                </h2>
+                            </div>
+            
+            
+                        </div>
+            
+                        <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample1">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf
+                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum eiusmod.
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <div class="row justify-content-center">
+                                <!--<img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080" alt="">-->
+            
+                            </div>
+                            <div class="row justify-content-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-center" type="button" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        Evenimentul Never Ever Risking Failing (N. E. R. F.)
+                                    </button>
+                                </h2>
+                            </div>
+            
+            
+                        </div>
+            
+                        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample1">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf
+                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum eiusmod.
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <div class="row justify-content-center">
+                                <!--<img class="responsive-img-w" height=1080 width=1920 src="http://www.placehold.it/1920x1080" alt="">-->
+            
+                            </div>
+                            <div class="row justify-content-center">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-center" type="button" data-toggle="collapse"
+                                        data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                        Evenimentul Never Ever Risking Failing (N. E. R. F.)
+                                    </button>
+                                </h2>
+                            </div>
+            
+            
+                        </div>
+            
+                        <div id="collapseSix" class="collapse show" aria-labelledby="headingSix"
+                            data-parent="#accordionExample1">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf
+                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                laborum eiusmod.
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+        </div>
+        
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-            </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-            </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-            </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script>
+
+        String.prototype.replaceAt = function (index, replacement) {
+            return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function genNumbers(text) {
+            var res = [], sel = new Map();
+            var num = "";
+            for(var i = 0; i < text.length; i++) {
+                if(text.charAt(i) === " ") {
+                    num += " ";
+                    continue;
+                }
+                if (Math.random() > 0.5) {
+                    num += "1";
+                } else {
+                    num += "0";
+                }
+            }
+                
+            res.push(num);
+
+            var i = 0;
+            while(sel.size != num.length) {
+                if(i >= num.length) {
+                    i = 0;
+                }
+                if(num.charAt(i) === "0" || num.charAt(i) === "1" || num.charAt(i) === " ") {
+                    if(Math.random() > 0.95) {
+                            num = num.replaceAt(i, text.charAt(i));
+                            res.push(num);
+                        sel.set(i, true);
+                    }
+                }
+                i++;
+            }
+            return res;
+        }
+
+        async function doIt() {
+            var landingTitle = document.getElementById('landing-title');
+            let finalText = "THIS IS INFO(1) ROBOTICS";
+            
+            words = genNumbers(finalText);
+
+            for (var i = 0; i < words.length; i++) {
+                landingTitle.innerText = words[i];
+                await sleep(50);
+            }
+            landingTitle.innerText = finalText;
+        }
+        
+
+        window.onload = doIt;
+    </script>
 
 </body>
 

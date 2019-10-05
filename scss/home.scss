@@ -57,6 +57,37 @@ $enable-rounded: false;
   transform: translateY(-50%);
 }
 
+@mixin madness {
+  
+  @media screen and (min-width: 801px) {
+
+
+    .display-1 {
+      padding: 16px;
+    }
+  }
+
+  .accordion {
+      padding-left: 16px;
+      padding-right: 16px;
+
+
+    .card {
+
+
+      .btn-link {
+        @include font-size(2rem);
+        color: greenyellow !important;
+      }
+
+
+      .collapse {
+        background-color: #777777;
+      }
+    }
+  }
+}
+
 //
 // import bootstrap
 //
@@ -72,6 +103,7 @@ body {
   font-family: "SF Mono", Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgb(218, 218, 218);
+  overflow-x:hidden; // >:)
 }
 
 @for $index from 1 through 6 {
@@ -94,26 +126,71 @@ body {
   }
 }
 
+.navigation {
+  height: 5vh;
+}
 
 .landing-area {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1b1b1b;
-  height: 100vh;
+  height: 95vh;
   margin-bottom: 0;
+  box-sizing: border-box;
+
+  #vid-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+  }
+
+  #vid-background-dark {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
 
   .cont {
+    width: 90%;
     .main-title {
-      width: auto;
+      overflow: hidden;
+      width: 100%;
       padding: 1rem;
       text-align: center;
       @include font-size(5.8rem);
       font-family: "Share Tech Mono", monospace;
       background-color: whitesmoke;
+      box-shadow: 15px 15px 0 #8b8b8b;
       color: #1b1b1b;
-      box-shadow: 15px 15px 0 #313131;
+      animation-name: title-anim;
+      animation-duration: 1s;
+      
     }
+
+    @keyframes title-anim {
+      0% {
+        box-shadow: 0 0 0 #5a5a5a;
+        opacity: 0%;
+      }
+
+      100% {
+        top: 30px;
+        box-shadow: 15px 15px 0 #8b8b8b;
+        opacity: 100%;
+      }
+    }
+
 
     .slogan {
       width: auto;
@@ -198,34 +275,25 @@ img.responsive-img-h {
 
 .team-area {
   background-color: #2b2b2b;
+  padding-bottom: 16px;
 }
 
 .sponsors-area {
   background-color: #2b2b2b;
+  padding-bottom: 16px;
 
-  
 }
 
 .events-area {
-
-  .accordion {
-
-
-    .card {
-      
-      .btn-link {
-        @include font-size(2rem);
-        color: greenyellow !important;
-      }
-
-
-      .collapse {
-        background-color: #777777;
-      }
-    }
-    
+  background-color: #2b2b2b;
+  .past-events {
+    @include madness();
   }
-  
+
+  .upcoming-events {
+    @include madness();
+  }
+
 }
 
 img.responsive-img-w {
@@ -237,8 +305,8 @@ img.responsive-img-w {
   }
 
   @media screen and (min-width: 801px) {
-    max-width: 80%;
-    width: 80%;
+
+    width: 50%;
   }
 
   height: auto;
